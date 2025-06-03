@@ -1,0 +1,34 @@
+-- Comandos para NodeJS y Typescript -- 
+
+npm init -y // Inicializa el proyecto de Nodejs
+
+-- Instalar el TypeScript -- 
+npm install -D typescript @types/express @types/node ts-node
+
+-- Instalar express -- 
+npm install express
+
+-- Inicializar la configuración de Typescript -- 
+npx tsc --init // Esto crea un archivo tsconfig.json
+
+-- Dentro del tsconfig.json -- 
+
+En el atributo "target": "ES6"
+
+Vamos a descomentar el atributo "outDir": "./dist"
+
+-- Para generar los archivos .js -- 
+npx tsc
+npx tsc --watch // En cada cambio o agregación de un archivo .ts se generan los archivos.js
+
+-- Para ejecutar el archivo.js -- 
+node ./dist/index.js
+
+-- Para ejecutar nuestro servidor web --
+// En Scripts crearemos uno llamado "dev"
+
+"dev": "nodemon --exec ts-node src/main.ts"
+
+// ejecutamos el siguiente comando
+
+npm run dev
