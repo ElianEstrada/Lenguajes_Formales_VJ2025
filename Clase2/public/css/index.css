@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+img {
+    width: 100px;
+}
+
+.item {
+    text-align: center;
+    flex-basis: 33%;
+    flex-grow: 1;
+}

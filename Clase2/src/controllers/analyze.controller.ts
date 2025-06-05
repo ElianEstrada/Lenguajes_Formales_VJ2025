@@ -15,6 +15,22 @@ export const analyze = (req: Request, res: Response) => {
     });
 }
 
-export const ping = (req: Request, res: Response) => {
-    res.send("pong");
+export const home = (req: Request, res: Response) => {
+
+    let pokemons = [
+        {
+            name: "venusaur",
+            type: "planta"
+        },
+        {
+            name: "charizard",
+            type: "fuego"
+        },
+        {
+            name: "dragonite",
+            type: "dragon"
+        }
+    ]
+
+    res.render('pages/index', { name: "Elian", pokemons: pokemons });
 }

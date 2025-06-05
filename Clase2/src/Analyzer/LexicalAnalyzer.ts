@@ -58,6 +58,10 @@ class LexicalAnalyzer {
                             this.state = 14;
                             this.addCharacter(char);
                             break;
+                        case ':':
+                            this.state = 16;
+                            this.addCharacter(char);
+                            break;
                         case ' ':
                             this.column++;
                             break;
@@ -217,6 +221,25 @@ class LexicalAnalyzer {
                 case 15:
                     // Aceptación
                     this.addToken(Type.STRING, this.auxChar, this.row, this.column - this.auxChar.length);
+                    this.clean();
+                    i--;
+                    break;
+                case 16:
+                    // Aceptación
+
+                    if (char == '=') {
+                        this.state = 17;
+                        this.addCharacter(char);
+                        continue;
+                    }
+
+                    this.addToken(Type.COLON, this.auxChar, this.row, this.column - this.auxChar.length);
+                    this.clean();
+                    i--;
+                    break;
+                case 17:
+                    // Aceptación
+                    this.addToken(Type.ASSIGN, this.auxChar, this.row, this.column - this.auxChar.length);
                     this.clean();
                     i--;
                     break;
