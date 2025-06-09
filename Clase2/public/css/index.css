@@ -5,6 +5,15 @@
     justify-content: space-between;
 }
 
+.jugador {
+    margin: 20px;
+    border: 1px solid gray;
+}
+
+h1 {
+    text-align: center;
+}
+
 img {
     width: 100px;
 }

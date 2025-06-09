@@ -1,0 +1,18 @@
+<% jugadores.forEach( (jugador) => { %>
+    
+<div class="jugador">
+    <h1> Jugador: <%= jugador.name %> </h1>
+
+    <div class="container">
+        <% jugador.pokemons.forEach((pokemon) => { %>
+            <div class="item">
+                <p> <%= pokemon.name %> </p>
+                <img id=<%= pokemon.name %> alt=<%= pokemon.name%>>
+                <p> <%= pokemon.type %> </p>
+            </div>
+        <% }); %>
+    </div>
+</div>
+
+<% }); %>
+

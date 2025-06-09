@@ -32,5 +32,20 @@ export const home = (req: Request, res: Response) => {
         }
     ]
 
-    res.render('pages/index', { name: "Elian", pokemons: pokemons });
+    let jugadores = [
+        {
+            name: "Elian",
+            pokemons: pokemons
+        },
+        {
+            name: "Maria",
+            pokemons: pokemons
+        },
+        {
+            name: "PokePlayer250",
+            pokemons: pokemons
+        }
+    ]
+
+    res.render('pages/index', { name: "Elian", jugadores: jugadores });
 }

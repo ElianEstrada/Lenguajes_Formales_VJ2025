@@ -9,26 +9,17 @@
 </head>
 
 <body>
-    <h1> Hola Mundo <%= name %> </h1>
 
-    <ul>
-        <% pokemons.forEach((pokemon) => { %>
-            <li> <%= pokemon.name %> </li>
-        <% }); %>
-    </ul>
+    <%- include('../partials/header'); %>
 
-    <div class="container">
-        <% pokemons.forEach((pokemon) => { %>
-            <div class="item">
-                <p> <%= pokemon.name %> </p>
-                <img id=<%= pokemon.name %> alt=<%= pokemon.name%>>
-                <p> <%= pokemon.type %> </p>
-            </div>
-        <% }); %>
-    </div>
+    <%- include('../partials/jugador', { jugadores: jugadores } ); %>
 
-    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor doloribus aut sapiente at eum. Error inventore
-        minima minus nesciunt placeat numquam dolore harum tempora repudiandae dolor! Amet a inventore id.</p>
+    <!--<button id="btnFile">
+        Abrir Archivo
+    </button>-->
+
+    <input type="file" name="Archivo" id="file_input">
+    <textarea name="Contenido" id="editor"></textarea>
 
     <script src="js/index.js"></script>
 </body>

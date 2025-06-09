@@ -19,4 +19,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
         getPokemon(pokemon, imagenes[i]);
     }
+
+
+    const file_input = document.getElementById('file_input');
+    const editor = document.getElementById('editor');
+
+    file_input.addEventListener('change', (e) => {
+        const file = e.target.files[0];
+
+        if (file) {
+
+            let reader = new FileReader();
+
+            reader.onload = (e) => {
+                editor.value = e.target.result;
+            };
+
+            reader.readAsText(file);
+        }
+    });
+
+
 });
