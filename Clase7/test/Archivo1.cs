@@ -1,35 +1,45 @@
 using System;
 
-public class Prueba {
-    static void Main (string[] args) {
-        int num1;
-        string nombre;
-        float precio;
-        num1 = 20;
+public class LFP_VJ2025 {
 
-        num2 = 10;
+    static void Main(string[] args) {
+        int edad;
+        float altura = 1.72;
+        string nombre = "Calificador1";
+        bool mayor_edad = false;
+        char genero;
 
-        Console.WriteLine(20 + 1 - num2);
-        Console.WriteLine(10)
-        Console.(1);
+        edad = 17;
+        genero = 'H';
 
-        if (10) {
-            Console.WriteLine(20);
-        }
+        Console.WriteLine("Bienvenido: " + nombre + " su altura es de: " + altura + " metros y tiene: " + edad + " años");
 
-        if (num2 != 10) {
-            Console.WriteLine(1);
-            string nombre = 50;
-        }
+        int nota_1, nota_2 = 61, nota_3 = 80, nota_4;
+        string nombre_1 = "Cali2", nombre_2, nombre_3;
+        bool isTree, isApple = false, isMountain;
+        
+        char inicial = 'A', final;
 
-        for (num1 = 10; num1 <= 20 * (20 + 1); i++) {
-            Console.WriteLine(2);
+        float sueldo_base = 1250.25, sueldo_neto, igss, cobro_iva = 12.0;
 
-            if (20) {
-                nombre = 20;
-            } else {
-                nombre = 30;
-            }
-        }
+        Console.WriteLine("Nota_1 = " + nota_1);
+        Console.WriteLine("Nota_2 = " + nota_2);
+        Console.WriteLine("Nota_3 = " + nota_3);
+        Console.WriteLine("Nota_4 = " + nota_4);
+
+
+        Console.WriteLine("nombre_1 = " + nombre_1);
+        Console.WriteLine("nombre_2 = " + nombre_2);
+        Console.WriteLine("nombre_3 = " + nombre_3);
+
+        Console.WriteLine("isTree: " + isTree);
+        Console.WriteLine("isApple: " + isApple);
+        Console.WriteLine("isMountain: " + isMountain);
+
+        Console.WriteLine("Sueldo base = " + sueldo_base);
+        Console.WriteLine("Sueldo neto = " + sueldo_neto);
+        Console.WriteLine("IGSS = " + igss);
+        Console.WriteLine("Cobro IVA = " + cobro_iva);
+
     }
 }

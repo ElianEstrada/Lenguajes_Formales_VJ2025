@@ -34,7 +34,7 @@ export class Declaration implements Instruction {
             case Type.R_FLOAT:
                 return 'number';
             case Type.R_STRING:
-            case Type.CHAR:
+            case Type.R_CHAR:
                 return 'string';
             default:
                 return 'boolean';
