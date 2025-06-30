@@ -50,7 +50,7 @@ export class For implements Instruction {
             return `${tabs}${instruction.transpiler()}`;
         }).join('');
 
-        return `for (${init.replace('\n', '')} ${condition}; ${step}) {\n${bodyFor}${tabs.slice(0, tabs.length - 1)}}`;
+        return `for (${init.replace('\n', '')} ${condition}; ${step}) {\n${bodyFor}${tabs.slice(0, tabs.length - 1)}}\n`;
     }
 
 }

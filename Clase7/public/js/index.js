@@ -63,6 +63,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let result = await response.json();
 
+        console.log(result);
+        
+
         let textTable = ``;
         let textErrors = ``;
 
@@ -82,10 +85,10 @@ document.addEventListener('DOMContentLoaded', () => {
             textErrors += `
             <tr>
                 <td> ${index + 1} </td>
-                <td> ${token.typeTokenString} </td>
-                <td> ${token.lexeme} </td>
-                <td> ${token.row} </td>
-                <td> ${token.column} </td>
+                <td> ${error.typeTokenString} </td>
+                <td> ${error.lexeme} </td>
+                <td> ${error.row} </td>
+                <td> ${error.column} </td>
             </tr>
             `;
         });
@@ -100,9 +103,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         } else {
 
-            alert('La entrada tiene errores léxicos');
+            alert('La entrada tiene errores sintácticos');
 
-            localStorage.setItem('errors', JSON.stringify(result.errors));
+            //localStorage.setItem('errors', JSON.stringify(result.errors));
         }
 
     });
