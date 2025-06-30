@@ -1,0 +1,7 @@
+&Jugador: "Jugador2" {
+    "venusaur"[planta] := {
+        [salud]=@15;
+        [ataque]=$15;
+        [defensa]=/15;
+    } %
+}

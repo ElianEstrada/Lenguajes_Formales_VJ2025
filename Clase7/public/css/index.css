@@ -1,0 +1,63 @@
+.container_user {
+    text-align: center;
+    margin: 2rem 1rem 2rem 1rem;
+}
+
+.btn_user {
+    font-size: 20px;
+    margin: 2rem 0 2rem 0;
+    padding: 0.5rem;
+    width: 20%;
+}
+
+.table_body {
+    overflow-y: scroll;
+    height: 43vh;
+    margin-top: 0;
+}
+
+.table_responsive {
+    max-height: 43vh;
+}
+
+#console {
+    text-align: start;
+    background: #2d2d2d;
+    border: 1px solid #555;
+    padding: 10px;
+    height: 25vh;
+    white-space: pre-wrap;
+    outline: none;
+    overflow-y: auto;
+    line-height: 1rem;
+}
+
+.text {
+    color: #f6f6f6;
+    text-align: start;
+    background: #2d2d2d;
+    border: 1px solid #555; 
+    padding: 10px;
+    height: 40vh;
+    white-space: pre-wrap;
+    max-width: 100%;
+    outline: none;
+    overflow-y: auto;
+    line-height: 1rem;
+}
+
+.keyword {
+    color: #569CD6;
+}
+
+.number {
+    color: #C06DFF;
+}
+
+.error {
+    color: #ff4444
+}
+
+.string {
+    color: #F28B63;
+}

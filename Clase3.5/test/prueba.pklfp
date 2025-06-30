@@ -1,0 +1,7 @@
+Jugador: "Elian" {
+    "omanyte"[agua] := (
+        [salud]=12;
+        [ataque]=13;
+        [defensa]=11;
+    )
+}

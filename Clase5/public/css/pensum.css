@@ -1,0 +1,58 @@
+.container_user {
+    text-align: center;
+    margin: 2rem 1rem 2rem 1rem;
+}
+
+.table_pensum {
+    width: 100%;
+    max-height: 100vh;
+}
+
+.table_pensum th {
+    border: 2px solid gray;
+}
+
+.table_pensum td {
+    padding: 1.5rem 0 1.5rem 0;
+    border: 2px solid gray;
+}
+
+.table_pensum p {
+    margin: 0;
+}
+
+.table_pensum div {
+    margin: 2%;
+    padding: 4%;
+    width: 60%;
+    max-width: 60%;
+    text-align: center;
+    position: relative;
+    background-color: #FAE1DA;
+}
+
+.pre_curso {
+    background-color: #C5FCCE !important;
+}
+
+.codigo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 15%;
+    height: 100%;
+    background-color: #EC824E;
+}
+
+.pre {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 15%;
+    height: 100%;
+    background-color: #EC824E;
+}
+
+.pre_font {
+    font-size: 12px;
+}

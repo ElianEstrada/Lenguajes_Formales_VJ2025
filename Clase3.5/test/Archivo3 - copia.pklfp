@@ -1,0 +1,168 @@
+Jugador: "Jugador3" {
+    "greninja"[agua] := (
+        [salud]=13;
+        [ataque]=15;
+        [defensa]=13;
+    )
+    "torterra"[planta] := (
+        [salud]=15;
+        [ataque]=12;
+        [defensa]=14;
+    )
+    "salamence"[dragon] := (
+        [salud]=13;
+        [ataque]=13;
+        [defensa]=13;
+    )
+    "persian"[normal] := (
+        [salud]=15;
+        [ataque]=12;
+        [defensa]=11;
+    )
+    "victreebel"[planta] := (
+        [salud]=13;
+        [ataque]=15;
+        [defensa]=12;
+    )
+    "charizard"[fuego] := (
+        [salud]=12;
+        [ataque]=13;
+        [defensa]=13;
+    )
+    "mew"[psiquico] := (
+        [salud]=15;
+        [ataque]=12;
+        [defensa]=15;
+    )
+}
+
+Jugador: "Jugador4" {
+    "exeggutor"[planta] := (
+        [salud]=12;
+        [ataque]=14;
+        [defensa]=13;
+    )
+    "rayquaza"[dragon] := (
+        [salud]=12;
+        [ataque]=11;
+        [defensa]=14;
+    )
+    "tauros"[normal] := (
+        [salud]=15;
+        [ataque]=15;
+        [defensa]=12;
+    )
+    "typhlosion"[fuego] := (
+        [salud]=14;
+        [ataque]=15;
+        [defensa]=12;
+    )
+    "sceptile"[planta] := (
+        [salud]=14;
+        [ataque]=12;
+        [defensa]=14;
+    )
+    "kingler"[agua] := (
+        [salud]=15;
+        [ataque]=12;
+        [defensa]=12;
+    )
+    "meloetta-aria"[psiquico] := (
+        [salud]=11;
+        [ataque]=13;
+        [defensa]=14;
+    )
+    "latias"[dragon] := (
+        [salud]=10;
+        [ataque]=10;
+        [defensa]=15;
+    )
+    "furret"[normal] := (
+        [salud]=11;
+        [ataque]=15;
+        [defensa]=12;
+    )
+    "vileplume"[planta] := (
+        [salud]=12;
+        [ataque]=11;
+        [defensa]=15;
+    )
+}
+
+Jugador: "Jugador5" {
+    "ditto"[normal] := (
+        [salud]=15;
+        [ataque]=12;
+        [defensa]=12;
+    )
+    "goodra"[dragon] := (
+        [salud]=12;
+        [ataque]=14;
+        [defensa]=15;
+    )
+    "ninetales"[fuego] := (
+        [salud]=14;
+        [ataque]=14;
+        [defensa]=15;
+    )
+    "leafeon"[planta] := (
+        [salud]=15;
+        [ataque]=15;
+        [defensa]=13;
+    )
+    "dragonite"[dragon] := (
+        [salud]=14;
+        [ataque]=15;
+        [defensa]=10;
+    )
+    "alakazam"[psiquico] := (
+        [salud]=15;
+        [ataque]=13;
+        [defensa]=13;
+    )
+    "milotic"[agua] := (
+        [salud]=11;
+        [ataque]=15;
+        [defensa]=11;
+    )
+    "porygon"[normal] := (
+        [salud]=10;
+        [ataque]=10;
+        [defensa]=13;
+    )
+    "gyarados"[agua] := (
+        [salud]=14;
+        [ataque]=14;
+        [defensa]=14;
+    )
+    "serperior"[planta] := (
+        [salud]=13;
+        [ataque]=14;
+        [defensa]=15;
+    )
+    "arcanine"[fuego] := (
+        [salud]=15;
+        [ataque]=10;
+        [defensa]=11;
+    )
+    "shaymin-land"[planta] := (
+        [salud]=15;
+        [ataque]=14;
+        [defensa]=15;
+    )
+    "espeon"[psiquico] := (
+        [salud]=14;
+        [ataque]=12;
+        [defensa]=11;
+    )
+    "garchomp"[dragon] := (
+        [salud]=13;
+        [ataque]=13;
+        [defensa]=13;
+    )
+    "eevee"[normal] := (
+        [salud]=11;
+        [ataque]=12;
+        [defensa]=13;
+    )
+}

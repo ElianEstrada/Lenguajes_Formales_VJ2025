@@ -1,0 +1,140 @@
+lista_palabras_reservadas = [  
+    using, 
+    System, 
+    public, 
+    class, 
+    static, 
+    void, 
+    Main, 
+    string,
+    int,
+    float,
+    char,
+    bool,
+    false,
+    true,
+    Console,
+    WriteLine,
+    if,
+    else,
+    for
+]
+
+tokens = [
+    ';',
+    '{',
+    '}',
+    '(',
+    ')',
+    '[',
+    ']',
+    ',',
+    '=',
+    '+',
+    '-',
+    '*',
+    '/',
+    '==',
+    '<',
+    '>',
+    '!=',
+    '<=',
+    '>=',
+    '.',
+    '++',
+    '--'
+]
+
+Notación BNF
+
+<program> ::= <block_using> <class>
+
+<block_using> ::= 'using' 'System' ';'
+
+<class> ::= 'public' 'class' ID '{' <block_Main> '}'
+
+<block_Main> ::= 'static' 'void' 'Main' '(' 'string' '[' ']' ID ')' '{' <lista_instrucciones> '}'
+
+<lista_instrucciones> ::=   <instruction> <lista_instruccionesP>
+
+<lista_instruccionesP> ::=    <instruction> <lista_instruccionesP>
+                            | epsilon
+
+<instruction> ::= <declaracion>
+                | <asignacion>
+                | <imprimir>
+                | <inst_if>
+                | <inst_for>
+
+<declaracion> ::= <tipo> <listaID> ';'
+
+<tipo> ::=    'int'
+            | 'string'
+            | 'char'
+            | 'bool'
+            | 'float'
+
+<listaID> ::= <idAsig> <listaIDP>
+
+<idAsig> ::= id <idAsigP>
+
+<idAsigP> ::= '=' <expresion>
+            | epsilon
+
+<listaIDP> ::=  ',' <idAsig> <listaIDP>
+              | epsilon
+
+<asignacion> ::= id '=' <expresion> ';'
+
+<imprimir> ::= 'Console' '.' 'WriteLine' '(' <expresion> ')' ';'
+
+<inst_if> ::= 'if' '(' <expresion> ')' '{' <lista_instrucciones> '}' <inst_ifP>
+
+<inst_ifP> ::= 'else' '{' <lista_instrucciones '}'
+             | epsilon
+
+
+<inst_for> ::= 'for' '(' <primer_bloque_for> <expresion> ';' <tercer_bloque_for> ')' '{' <lista_instrucciones> '}'
+
+<primer_bloque_for> ::= <declaracion>
+                      | <asignacion>
+
+<tercer_bloque_for> ::= id <tercer_bloque_for_P>
+
+<tercer_bloque_for_P> ::= <incremento>
+			            | <decremento>
+
+<incremento> ::= '++'
+
+<decremento> ::= '--'
+
+<expresion> ::= <aritmetica> <relacional>
+
+<relacional> ::=  '==' <aritmetica>
+                | '!=' <aritmetica>
+                | '<=' <aritmetica>
+                | '>=' <aritmetica>
+                | '<'  <aritmetica>
+                | '>'  <aritmetica>
+                | epsilon
+
+<aritmetica> ::=  <termino> <aritmeticaP>
+
+<aritmeticaP> ::= '+' <termino> <aritmeticaP>
+                | '-' <termino> <aritmeticaP>
+                | epsilon
+
+<termino> ::= <factor> <terminoP>
+
+<terminoP> ::= '*' <factor> <terminoP>
+            |  '/' <factor> <terminoP>
+            |  epsilon
+
+<factor> ::=  '(' <aritmetica> ')'
+            | id
+            | num
+            | decimal
+            | string
+            | char
+            | false
+            | true

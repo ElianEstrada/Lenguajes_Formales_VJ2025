@@ -1,0 +1,52 @@
+Jugador: "Jugador1" {
+    "alakazam"[psiquico] := (
+        [salud]=15;
+        [ataque]=13;
+        [defensa]=14;
+    )
+    "vaporeon"[agua] := (
+        [salud]=12;
+        [ataque]=12;
+        [defensa]=13;
+    )
+    "moltres"[fuego] := (
+        [salud]=13;
+        [ataque]=11;
+        [defensa]=10;
+    )
+    "blastoise"[agua] := (
+        [salud]=14;
+        [ataque]=15;
+        [defensa]=13;
+    )
+    "dragonite"[dragon] := (
+        [salud]=14;
+        [ataque]=14;
+        [defensa]=12;
+    )
+    "snorlax"[normal] := (
+        [salud]=13;
+        [ataque]=12;
+        [defensa]=12;
+    )
+    "flareon"[fuego] := (
+        [salud]=14;
+        [ataque]=13;
+        [defensa]=13;
+    )
+    "dialga"[dragon] := (
+        [salud]=10;
+        [ataque]=10;
+        [defensa]=12;
+    )
+    "mewtwo"[psiquico] := (
+        [salud]=11;
+        [ataque]=10;
+        [defensa]=12;
+    )
+    "torterra"[planta] := (
+        [salud]=13;
+        [ataque]=15;
+        [defensa]=13;
+    )
+}
